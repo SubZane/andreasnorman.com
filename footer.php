@@ -9,7 +9,7 @@
       </div>
       <div class="row">
         <div class="span3 about">
-          <img alt="Photo of Andreas Norman" src="<?php bloginfo('template_url'); ?>/images/andreasnorman.jpg" />
+          <img alt="Photo of Andreas Norman" src="<?php bloginfo('template_url'); ?>/images/andreasnorman.jpg"  data-at2x="<?php bloginfo('template_url'); ?>/images/andreasnorman@2x.jpg" />
         </div>
         <div class="span9 about">
           <p><b>Andreas Norman</b> is a web creative skilled in everything from web development to graphic design and strategy. He's currently working as the Creative Director of Knowit Malmö, Sweden.</p>
