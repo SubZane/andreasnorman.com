@@ -1,5 +1,21 @@
 <?php get_header(); ?>
+<script>
+$(document).ready(function() {
+  $(document).keydown(function(e){
+      if (e.keyCode == 37) { 
+        $url = $(".prevpost a").attr("href");
+        window.location = $url;
+      }
+  });
 
+  $(document).keydown(function(e){
+      if (e.keyCode == 39) { 
+      $url = $(".nextpost a").attr("href");
+        window.location = $url;
+      }
+  });
+});
+</script>
   <?php while ( have_posts() ) : the_post(); ?>
 
 <div class="arrows prevpost hidden-phone">
