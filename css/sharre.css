@@ -1,0 +1,52 @@
+  .sharrre{
+    width: 84px;
+    height: 32px;
+    background-image: url('../images/sharebuttons.png');
+    margin-right: 20px;
+    margin-bottom: 3.5rem;
+/*
+    -moz-transition:all 0.6s ease;
+    -webkit-transition:all 0.6s ease;
+    -ms-transition:all 0.6s ease;
+    -o-transition:all 0.6s ease;
+    transition:all 0.6s ease;
+    -webkit-filter:grayscale(1);
+*/
+    float:left;
+    cursor: pointer;
+  }
+/*
+  .sharrre:hover {
+-webkit-filter:grayscale(0); 
+  }
+*/
+
+  .sharrre .box a:hover{
+    text-decoration:none;
+  }
+  .sharrre .count {
+    color:#fff;
+    display:block;
+    font-size:12px;
+    font-weight:bold;
+    position:relative;
+    text-align:right;
+    width:75px;
+    height: 32px;
+    line-height: 32px;
+    padding-right: 9px;
+  }
+
+  .sharrre .share {
+    display: none;
+  }
+  #twitter {
+    background-position: 0px -32px;
+
+  }
+  #facebook {
+    background-position: 0px 0px;
+  }
+  #googleplus {
+    background-position: 0px -64px;
+  }

@@ -1,0 +1,116 @@
+.pagination ul
+{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border-radius:none;
+	display:table;
+	margin:0 auto;
+	padding-bottom: 6rem;
+}
+
+.pagination ul li
+{
+	display:inline-table;
+	padding:0 7px 0 0
+}
+
+.pagination ul > li > a,.pagination ul > li > span
+{
+	float:left;
+	padding:0 9px;
+	line-height:26px;
+	text-decoration:none;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:3px
+}
+
+.pagination ul li a
+{
+	color:#4a4a4a;
+	font-size:12px
+}
+
+.pagination li.active a
+{
+	background-color:#4a4a4a;
+	color:#fff
+}
+
+.pagination ul li a:hover
+{
+	background-color:#4a4a4a;
+	color:#fff
+}
+
+.pagination li a.prev {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.pagination li a.next {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.pagination li a.prev i
+{
+	text-indent: -9999px;
+}
+
+.pagination li a.next i
+{
+	text-indent: -9999px;
+}
+
+.pagination ul > li:first-child > a,.pagination ul > li:first-child > span
+{
+	border-radius:3px
+}
+
+.pagination ul > li:last-child > a,.pagination ul > li:last-child > span
+{
+	border-radius:3px
+}
+
+.pagination ul > .active > a,.pagination ul > .active > span
+{
+	color:#999;
+	cursor:default;
+	font-size:12px
+}
+
+.pagination ul > li:first-child > a,.pagination ul > li:first-child > span
+{
+	font-size:12px
+}
+
+.pagination .current,.pagination .dots
+{
+	float:left;
+	padding:0 9px;
+	line-height:26px;
+	text-decoration:none;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:3px
+}
+
+.pagination .current
+{
+	background-color:#f5f5f5
+}
+
+.pagination li:first-child .current
+{
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+.pagination li:last-child .current
+{
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
