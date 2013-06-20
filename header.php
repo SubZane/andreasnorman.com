@@ -63,6 +63,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-startup-image" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon-144x144.png">
 
 		<?php wp_head(); ?>
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
