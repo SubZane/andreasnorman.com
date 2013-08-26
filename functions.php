@@ -10,10 +10,22 @@ add_filter( 'the_content', 'wrap_div_around_images', 100 );
 add_action( 'wp_print_scripts', 'my_deregister_javascript', 100 );
 
 function my_deregister_javascript() {
-    wp_deregister_script( 'jquery' );
+	if ( !is_admin() ) wp_deregister_script('jquery');
 }
 
+function download_func( $atts ){
+	extract( shortcode_atts( array(
+		'text' => 'text',
+		'url' => 'url',
+	), $atts ) );
+	return '
+	<div class="downloadbox">
+		<a href="'.$url.'"><img class="icon" src="'.get_bloginfo('template_url').'/images/icon-download.png" data-at2x="'.get_bloginfo('template_url').'/images/icon-download@2x.png" alt="a"> '.$text.'</a>
+	</div>
+	';
 
+}
+add_shortcode( 'download', 'download_func' );
 
 
 
@@ -52,7 +64,13 @@ function my_comments($comment, $args, $depth) {
 		<?php endif; ?>
 		<div class="comment-author vcard">
 		<span class="avatarholder"><?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?></span>
-		<cite class="fn"><?php printf(__('%s'), get_comment_author_link()) ?></cite> <span class="says">says:</span>
+		<cite class="fn">
+<?php if ($comment->user_id) {
+$user=get_userdata($comment->user_id);
+echo $user->display_name;
+} else { comment_author_link(); } ?>			
+
+		</cite> <span class="says">says:</span>
 		</div>
 <?php if ($comment->comment_approved == '0') : ?>
 		<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
@@ -206,8 +224,8 @@ function hide_meta_boxes() {
 	remove_meta_box('slugdiv','post','normal');
 	remove_meta_box('slugdiv','page','normal');
 	remove_meta_box('postcustom','page','normal');
-	remove_meta_box('commentstatusdiv','post','normal');
-	remove_meta_box('commentstatusdiv','page','normal');
+	#remove_meta_box('commentstatusdiv','post','normal');
+	#remove_meta_box('commentstatusdiv','page','normal');
 	remove_meta_box('commentsdiv','post','normal');
 	remove_meta_box('commentsdiv','page','normal');
 	remove_meta_box('postimagediv','page','side');
@@ -236,7 +254,7 @@ function hide_meta_boxes() {
 
 function remove_dashboard_widgets() {
 	global $wp_meta_boxes;
-	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
 	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
 	unset($wp_meta_boxes['dashboard']['normal']['core']['rg_forms_dashboard']);
 	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
