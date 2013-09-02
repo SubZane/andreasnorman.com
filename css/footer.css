@@ -28,6 +28,9 @@ footer .post-date {
 
 footer .about img {
 	margin-bottom: 2rem;
+-webkit-border-radius: 95px;
+-moz-border-radius: 95px;
+border-radius: 95px;
 }
 
 footer .about p {

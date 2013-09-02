@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <script>
+/*
 $(document).ready(function() {
   $(document).keydown(function(e){
       if (e.keyCode == 37) { 
@@ -15,6 +16,7 @@ $(document).ready(function() {
       }
   });
 });
+*/
 </script>
   <?php while ( have_posts() ) : the_post(); ?>
 
