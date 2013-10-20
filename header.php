@@ -25,6 +25,7 @@
     <!--[if lt IE 9]>
       <script src="<?php bloginfo('template_url'); ?>/js/html5.js"></script>
     <![endif]-->
+      <script src="<?php bloginfo('template_url'); ?>/js/jquery.js" type="text/javascript"></script>
 
     <!-- Le styles -->
     <link href="<?php bloginfo('template_url'); ?>/css/csscompressor.php" rel="stylesheet">

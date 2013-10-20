@@ -1,11 +1,60 @@
 body {
 	font-family: 'PT Serif', 'Gentium Basic', serif;
-	background-color: #f1f1f1;
+	background-color: #fff;
 }
 
 input.searchbox {
 	width: 150px;
 	margin-right: 10px;	
+}
+
+.arrows a {
+	text-indent: -9999px;
+	background-image: url('../images/arrows-large.png');
+	height: 95px;
+	width: 75px;
+	display: block;
+	position: fixed;
+	top: 45%;
+	opacity: 0.1;
+}
+
+.arrows a {
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;	
+
+}
+
+.arrows a:hover {
+	opacity: 0.8;
+}
+
+.prevpost a {
+	background-position: -10px 0px;
+	left: 40px;
+}
+
+.nextpost a {
+	background-position: 80px 0px;
+	right: 40px;
+}
+
+.nextpost a:hover {
+	-webkit-transform: translate3d(-15px, 0, 0); 
+	-moz-transform: translate3d(-15px, 0, 0); 
+	-ms-transform: translate3d(-15px, 0, 0); 
+	-o-transform: translate3d(-15px, 0, 0); 
+	transform: translate3d(-15px, 0, 0);	
+}
+
+.prevpost a:hover {
+	-webkit-transform: translate3d(15px, 0, 0); 
+	-moz-transform: translate3d(15px, 0, 0); 
+	-ms-transform: translate3d(15px, 0, 0); 
+	-o-transform: translate3d(15px, 0, 0); 
+	transform: translate3d(15px, 0, 0);	
 }
 
 
@@ -41,7 +90,8 @@ h1,h2,h3,h4 {
 
 .postlist li .date {
 	color: #999;
-	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
 }
 
 div.intro p {
@@ -127,6 +177,15 @@ header {
 background-color: #F3F3F3;
 border: 1px solid #ddd;
 padding: 5px;
+}
+
+.post-content img.icon {
+	display: inline;
+	background: none;
+	padding: 0;
+	border: none;
+float: left;
+margin-right: 1rem;
 }
 
 p {
@@ -263,6 +322,19 @@ h3, h4 {
 	margin-top: 5rem;
 	font-size: 3rem;
 	text-transform: uppercase;
+}
+
+div.downloadbox {
+	padding: 2.5rem;
+	background-color: #3a9ec8;
+	font-family: 'Roboto Condensed','sans-serif';
+	font-size: 2rem;
+	margin-top: 4rem;
+	color: white;
+}
+
+div.downloadbox a {
+	color: white;
 }
 
 .blogheader {
