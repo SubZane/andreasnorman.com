@@ -1,6 +1,7 @@
 body {
 	font-family: 'PT Serif', 'Gentium Basic', serif;
 	background-color: #fff;
+	color: #333332;
 }
 
 h1,h2,h3,h4 {
@@ -94,7 +95,6 @@ footer p,
 .postcontent p.preamble,
 .postcontent li {
    font-size: inherit;
-   color: #333332;
 }
 
 .postcontent p.preamble {

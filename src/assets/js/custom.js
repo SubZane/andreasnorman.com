@@ -4,6 +4,15 @@ $(document).ready(function($) {
     $('.post-content figure a').fluidbox();
   if (iw >= 768) {
   };
+  
+  $('body').flowtype({
+   minimum   : 320,
+   maximum   : 790,
+   minFont   : 18,
+   maxFont   : 50,
+   fontRatio : 40,
+   lineRatio : 1.7
+  });
 
   $(".postcontent").fitVids();
 
