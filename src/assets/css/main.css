@@ -1,0 +1,368 @@
+body {
+	font-family: 'PT Serif', 'Gentium Basic', serif;
+	background-color: #fff;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Roboto Condensed', 'sans-serif';
+	font-weight: normal;
+	font-weight: 700;
+}
+
+::selection {
+	background-color: #B163A3;
+	color: #fff;
+}
+
+.form-control {
+	font-size: 16px;
+	height: 45px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+	font-family: 'Roboto Condensed', 'sans-serif';
+	text-transform: uppercase;
+	font-size: 16px;
+	height: 45px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+input[type="submit"]:hover {
+	-webkit-transition: all 400ms ease;
+	   -moz-transition: all 400ms ease;
+	   -ms-transition: all 400ms ease;
+	   transition: all 400ms ease;
+   background-color: #B163A3;
+   color: white;
+   border-color:#B163A3;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+
+a {
+	-webkit-transition: all 400ms ease;
+	   -moz-transition: all 400ms ease;
+	   -ms-transition: all 400ms ease;
+	   transition: all 400ms ease;
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B163A3;
+}
+
+h1.blogheader,
+.postcontent h2,
+.postcontent h3,
+.postcontent h4,
+.postcontenth5,
+.postcontenth6,
+.postcontent p,
+footer p,
+.postcontent p.preamble,
+.postcontent li {
+   font-size: inherit;
+   color: #333332;
+}
+
+.postcontent p.preamble {
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+h1.blogheader {
+	font-size: 3.2em;
+	line-height: 1.4em;
+}
+
+.postcontent a {
+	background-color: #B163A3;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 7px;
+	padding-right: 7px;
+	-webkit-transition: all 400ms ease;
+	   -moz-transition: all 400ms ease;
+	   -ms-transition: all 400ms ease;
+	   transition: all 400ms ease;
+}
+
+.postcontent a:hover {
+	background-color: #333;
+	color: #fff;
+
+}
+
+.postcontent li a {
+	padding: 0;
+	color: #B163A3;
+	text-decoration: none;
+	background: transparent;
+} 
+
+.postcontent li a:hover {
+	background: transparent;
+	color: #333;
+	text-decoration: underline;
+
+}
+
+.logo a {
+	position: fixed;
+	left: 30px;
+	top: 30px;
+	width: 125px;
+	height: 125px;
+	background-image: url('../img/logo-sprite.png');
+	background-size: 250px;
+	display: block;
+	text-indent: -99999px;
+	border-radius: 50%;
+	-webkit-transition: none;
+	   -moz-transition: none;
+	   -ms-transition: none;
+	   transition: none;
+}
+
+.logo a:hover {
+	background-position: -125px 0px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (min-resolution: 240dpi) {
+.logo a {
+		background-image: url('../img/logo-sprite@2x.png');
+	}
+
+}
+
+.intro {
+	margin-top: 60px;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 40px;
+	padding-top: 45px;
+	text-align: center;
+}
+
+/** Post list Index **/
+
+.post-list {
+	margin-top: 40px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 40px;
+}
+
+.post-list ul, .post-list ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.post-list ul li {
+	font-family: 'Roboto Condensed', 'sans-serif';
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+.post-list ul li span.date {
+	font-size: 14px;
+	color: #bbb;
+}
+
+footer {
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+footer .social-connect {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+footer .social-connect li {
+	display: inline-block;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+footer .social-connect li a {
+	color: #333;
+}
+
+footer .social-connect li a:hover {
+	color: #B163A3;
+}
+
+/* Post */
+
+.blogheader {
+	margin-top: 60px;
+	font-size: 85px;
+	line-height: 95px;
+	padding-bottom: 60px;
+	padding-top: 45px;
+	margin-bottom: 0px;
+}
+
+.postcontent h3 {
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+p.preamble {
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.postcontent blockquote {
+	margin-left: -100px;
+	margin-right: -100px;
+	border: none;
+}
+
+.postcontent blockquote p {
+	font-size: 28px;
+	line-height: 45px;
+	color: #111;
+}
+
+.downloadbox {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.downloadbox a {
+	border: 1px solid #B163A3;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #fff;
+	color: #B163A3;
+	display: block;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', 'sans-serif';
+}
+
+.downloadbox a i {
+	font-size: 50px;
+	line-height: 50px;
+	margin-right: 20px;
+}
+
+.downloadbox a:hover {
+	background-color: #B163A3;
+	color: #fff;
+	border-color:#B163A3;
+}
+
+
+
+/* Figures */
+
+figure {
+	margin: 0;
+	display:block;
+	position: relative;
+	margin-bottom: 10px;
+	clear: both;
+	outline: 0;
+}
+
+.postcontent figure a {
+	background-color: transparent;
+	padding: 0;
+}
+
+figure img {
+	background-color: #f2f2f0;
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figure.alignleft {
+	margin-left:-100px;
+	width:50%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+figure.alignright {
+	margin-right:-100px;
+	width:75%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+figcaption.image-caption {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #666665;
+	outline: 0;
+	z-index: 300;
+}
+
+figcaption.image-caption {
+	position: absolute;
+	left: -172px;
+	width: 150px;
+	top: 0;
+	text-align: right;
+	margin-top: 0;
+}
+
+figcaption.image-caption::before {
+	width: 25%;
+	margin-left: 75%;
+	border-top: 1px solid #dededc;
+	display: block;
+	content: "";
+	margin-bottom: 10px;
+}
+
+.wrapper.black {
+	width: 100%;
+	background-color: rgba(000,000,000,0.05);
+	padding-bottom: 40px;
+	padding-top: 30px;
+	margin-top: 50px;
+}
+
+

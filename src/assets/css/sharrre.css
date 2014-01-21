@@ -1,0 +1,47 @@
+.sharebuttons {
+	border-top: 1px solid #ccc;
+	margin-top: 40px;
+	padding-top: 20px;
+}
+
+.sharebuttons .postdate {
+	float: right;
+	margin-top: 15px;
+	font-size: 18px;
+	text-align: right;
+	font-style: italic;
+}
+
+.sharebuttons a {
+	font-size: 40px;
+	background-color: transparent;
+	opacity: 0.5;
+	float: left;
+}
+
+.sharebuttons a:hover {
+	background-color: transparent;
+	opacity: 1;
+}
+
+
+.sharebuttons a#twitter {
+	color: #2daae1;
+}
+
+.sharebuttons a#facebook {
+	color: #3c5b9b;
+}
+
+.sharebuttons a#linkedin {
+	color: #0173b2;
+}
+
+.sharebuttons a#googleplus {
+	color: #333230;
+}
+
+
+
+
+

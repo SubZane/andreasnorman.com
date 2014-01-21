@@ -1,0 +1,142 @@
+.comments h3 {
+  font-size: 45px;
+}
+
+.comments h4 {
+  font-size: 35px;
+}
+
+.commentlist, .commentlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.children {
+  padding-left: 90px;
+}
+
+.commentlist {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+div.avatar {
+  float: left;
+}
+
+.avatar img.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.commentlist cite.fn {
+  font-size: 0.8em;
+  font-family: 'Roboto Condensed', 'sans-serif';
+  font-weight: 700;
+}
+
+.commentlist .info {
+  margin-left: 90px;
+}
+
+.commentlist.pings .info {
+  margin-left: 0;
+}
+
+.commentlist .info .date {
+  font-size: 0.6em;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.comment-content {
+  margin-left: 90px;
+  margin-top: 10px;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.commentlist.pings .comment-content {
+  margin-left: 0;
+}
+
+.comment-body {
+  margin-bottom: 40px;
+}
+
+.commentmetadata {
+  font-style: italic;
+  color: #ccc;
+} 
+
+.commentlist a {
+  color: #B163A3;
+  text-decoration: none;
+  -webkit-transition: all 400ms ease;
+     -moz-transition: all 400ms ease;
+     -ms-transition: all 400ms ease;
+     transition: all 400ms ease;
+}
+
+.commentlist a:hover {
+  color: #333;
+}
+
+a.comment-reply-link {
+    display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  font-family: 'Roboto Condensed', 'sans-serif';
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 25px;
+  height: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+a.comment-reply-link:hover {
+  -webkit-transition: all 400ms ease;
+     -moz-transition: all 400ms ease;
+     -ms-transition: all 400ms ease;
+     transition: all 400ms ease;
+   background-color: #B163A3;
+   color: white;
+   border-color:#B163A3;
+   text-decoration: none;
+}
+
+.reply {
+  float: right;
+}
+
+.comment-body:before,
+.comment-body:after {
+  content: " ";
+  display: table;
+}
+.comment-body:after {
+  clear: both;
+}
