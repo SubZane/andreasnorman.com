@@ -9,11 +9,11 @@ js_dir=$(src_dir)/assets/js
 
 # If using CSS instead of SASS
 css_dir=$(src_dir)/assets/css
-css_files=bootstrap.css font-awesome.css main.css pagination.css comments.css fluidbox.css sharrre.css responsive.css
+css_files=bootstrap.css font-awesome.css main.css pagination.css comments.css fluidbox.css canvas.css sharrre.css responsive.css
 exception_css= ie.css
 
 # script files
-scripts = plugins.min.js lightbox_me.js custom.js
+scripts = plugins.min.js custom.js
 exception_js = jquery.min.js iefixes.min.js
 
 #compile: clean init setup make_css minjs exceptionjs copycontent
@@ -28,26 +28,11 @@ setup:
 	@uglifyjs -c --output $(src_dir)/assets/js/iefixes.min.js $(src_dir)/assets/js/iefixes.js
 	@rm $(src_dir)/assets/js/iefixes.js
 
-	#
-	# Bootstrap JavaScript files. Include specific files for smaller files
-	#
-	#@curl http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js 									>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/tab.js 															>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/affix.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/alert.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/button.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/carousel.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/collapse.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/dropdown.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/modal.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/popover.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/scrollspy.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/tooltip.js 														>> $(src_dir)/assets/js/plugins.js
-	#@curl https://raw.github.com/twbs/bootstrap/master/js/transition.js 														>> $(src_dir)/assets/js/plugins.js
 	@curl http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js 							-o $(src_dir)/assets/js/plugins.js
 	#@curl http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js 				>> $(src_dir)/assets/js/plugins.js
 	@curl https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js							>> $(src_dir)/assets/js/plugins.js
 	#@curl https://raw.github.com/ftlabs/fastclick/master/lib/fastclick.js 										>> $(src_dir)/assets/js/plugins.js
+	@curl https://raw2.github.com/cowboy/jquery-outside-events/master/jquery.ba-outside-events.min.js >> $(src_dir)/assets/js/plugins.js
 	@curl https://raw.github.com/Julienh/Sharrre/master/jquery.sharrre.min.js 								>> $(src_dir)/assets/js/plugins.js
 	@curl https://raw.github.com/simplefocus/FlowType.JS/master/flowtype.js >> $(src_dir)/assets/js/plugins.js
 	@curl http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js               >> $(src_dir)/assets/js/plugins.js

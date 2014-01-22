@@ -53,11 +53,32 @@
   </head>
 
 <body>
+<div id="st-container" class="st-container">
+  <div class="st-pusher">
+  <nav class="st-menu st-effect-6" id="menu-6">
+    <div class="post-list">
+      <h2>Recent articles</h2>
+      <ul>
+      <?php 
+      $args = array( 'posts_per_page' => 50 );
+      $lastposts = get_posts( $args );
+      setup_postdata( $post );
+      foreach ( $lastposts as $post ) :
+       ?> 
+            <li id="postid_<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?> <span class="date"><?php the_time( 'j M, Y' ) ?></span></a></li>
+      <?php endforeach; 
+      wp_reset_postdata(); ?>
+      </ul>
+    </div>
+  </nav>
+  <div class="st-content"><!-- this is the wrapper for the content -->
+    <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
 <a class="hidden-sm hidden-xs" href="https://github.com/subzane"><img style="position: fixed; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
 <div class="wrapper" id="contentholder">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-        <div class="logo"><a href="<?php echo get_option('home'); ?>">an logo</a></div>
+        <div class="logo"><a href="#" id="sidemenu" data-effect="st-effect-6">an logo</a></div>
       </div>
     </div>

@@ -3,6 +3,7 @@ $(document).ready(function($) {
 
     $('.post-content figure a').fluidbox();
   if (iw >= 768) {
+
   };
   
   $('body').flowtype({
@@ -18,8 +19,36 @@ $(document).ready(function($) {
 
 	$('.image-wraper img').on('click', function(e) {
 		e.preventDefault();
-	});	
+	});
+
+
+
+  
+
+  $('#sidemenu').on('click', function(e) {
+    $(this).hide(1, function() {
+      var effect = $(this).data('effect');
+      e.preventDefault();
+      e.stopPropagation();
+      $('#st-container').removeClass();
+      $('#st-container').addClass('st-container');
+      $('#st-container').addClass(effect);
+      setTimeout( function() {
+        $('#st-container').addClass('st-menu-open');
+      }, 25 );
+      var elems = $('.st-menu');
+      elems.bind( 'clickoutside', function(event){
+        $('#st-container').removeClass('st-menu-open');
+        setTimeout( function() {
+          $('#sidemenu').show();
+        }, 550 );
+        $('#st-container').unbind('clickoutside');
+      });
+      
+    });
+  });
 /*
+
   $('#twitter').sharrre({
     share: {
       twitter: true
