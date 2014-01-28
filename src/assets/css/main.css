@@ -106,6 +106,13 @@ a:hover {
 	padding-bottom: 40px;
 }
 
+.post-list .excerpt {
+	font-family: 'Playfair Display';
+	font-size: 0.8em;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
 .post-list ul, .post-list ul li {
 	margin: 0;
 	padding: 0;
@@ -113,15 +120,28 @@ a:hover {
 }
 
 .post-list ul li {
-	margin-bottom: 25px;
-	font-family: 'Playfair Display';
+	margin-bottom: 50px;
+	font-family: 'Open Sans Condensed';
 	font-size: 1.4em;
+	font-weight: 600;
+}
+/*
+.post-list ul li:first-child {
+	font-family: 'Open Sans Condensed';
+	font-size: 3em;
+	margin-bottom: 80px;
 }
 
+.post-list ul li:first-child .excerpt {
+	font-size: 0.5em;
+}
+*/
 
-.post-list ul li span.date {
-	font-size: 14px;
-	color: #bbb;
+.post-list ul li div.date {
+	font-size: 0.6em;
+	color: #888;
+	text-transform: uppercase;
+	font-family: 'PT Sans Caption';
 }
 
 footer {
@@ -269,7 +289,7 @@ hr.divider {
 	color: #B163A3;
 	display: block;
 	font-size: 20px;
-	font-family: 'Roboto Condensed', 'sans-serif';
+	font-family: 'PT Sans Caption', 'sans-serif';
 }
 
 .downloadbox a i {

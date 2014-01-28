@@ -47,11 +47,49 @@
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) { 
 }
 
-/* iPhone 2G-4S in portrait and landscape */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	.postcontent blockquote {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.postcontent blockquote p {
+		font-size: 2em;
+	}
 }
 /* iPhone 2G-4S in portrait */
 @media only screen and (min-width : 320px) and (max-width : 480px) and (orientation : portrait) {
+	.intro {
+		font-size: 1.8em;
+	}
+
+	.postcontent ul>li, .postcontent p {
+		font-size: 1.2em;
+	}
+
+	.postcontent p.preamble {
+		font-size: 1.4em;
+	}
+
+	h1.blogheader {
+		font-size: 3em;
+	}
+	
+	.postcontent h3 {
+		font-size: 1.4em;
+	}
+
+	.comments h3, .comments h4 {
+		font-size: 1.8em;
+	}
+
+	.postcontent blockquote {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.postcontent blockquote p {
+		font-size: 1.8em;
+	}
+
 	footer img {
 		margin-bottom: 40px;
 	}
@@ -67,7 +105,7 @@
 	}
 
 	.comment-content p {
-		font-size: 1.2em;
+		font-size: 1em;
 		line-height: 1.5em;
 	}
 

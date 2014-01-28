@@ -11,7 +11,11 @@
     <div class="post-list">
       <ul>
       <?php while ( have_posts() ) : the_post(); ?>
-            <li id="postid_<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><span class="hidden-phone">,</span> <span class="date"><?php the_time( 'j M, Y' ) ?></span></li>
+            <li id="postid_<?php the_ID(); ?>">
+              <div class="date"><?php the_time( 'j M, Y' ) ?></div>
+              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> 
+              <div class="excerpt"><?php the_excerpt(); ?></div>
+            </li>
       <?php endwhile; ?>
       </ul>
     </div>
