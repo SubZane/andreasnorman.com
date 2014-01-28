@@ -12,12 +12,9 @@
       <article class="postcontent">
         <p class="preamble"><?php if($post->post_excerpt) the_excerpt(); ?></p>
         <div class="post-content"><?php the_content(); ?></div>
+        <hr class="divider">
 
         <div class="sharebuttons clearfix hidden-sm hidden-xs">
-          <a href="#" id="twitter" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-title="Tweet"></a>
-          <a href="#" id="facebook" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-title="Like"></a>
-          <a href="#" id="linkedin" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-title="Share"></a>
-          <a href="#" id="googleplus" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-title="+1"></a>
           <div class="postdate">Posted <?php the_date("l, F j, Y"); ?></div>
         </div>
 

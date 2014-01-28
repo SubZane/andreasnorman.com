@@ -6,25 +6,12 @@ $(document).ready(function($) {
 
   };
   
-  $('body').flowtype({
-   minimum   : 320,
-   maximum   : 790,
-   minFont   : 18,
-   maxFont   : 50,
-   fontRatio : 40,
-   lineRatio : 1.7
-  });
-
   $(".postcontent").fitVids();
 
+/*
 	$('.image-wraper img').on('click', function(e) {
 		e.preventDefault();
 	});
-
-
-
-  
-
   $('#sidemenu').on('click', function(e) {
     $(this).hide(1, function() {
       var effect = $(this).data('effect');
@@ -41,13 +28,13 @@ $(document).ready(function($) {
         $('#st-container').removeClass('st-menu-open');
         setTimeout( function() {
           $('#sidemenu').show();
+          console.log('show menu');
         }, 550 );
         $('#st-container').unbind('clickoutside');
       });
       
     });
   });
-/*
 
   $('#twitter').sharrre({
     share: {

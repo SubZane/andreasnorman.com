@@ -9,7 +9,7 @@ js_dir=$(src_dir)/assets/js
 
 # If using CSS instead of SASS
 css_dir=$(src_dir)/assets/css
-css_files=bootstrap.css font-awesome.css main.css pagination.css comments.css fluidbox.css canvas.css sharrre.css responsive.css
+css_files=bootstrap.css font-awesome.css main.css pagination.css comments.css fluidbox.css responsive.css
 exception_css= ie.css
 
 # script files
@@ -32,9 +32,9 @@ setup:
 	#@curl http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js 				>> $(src_dir)/assets/js/plugins.js
 	@curl https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js							>> $(src_dir)/assets/js/plugins.js
 	#@curl https://raw.github.com/ftlabs/fastclick/master/lib/fastclick.js 										>> $(src_dir)/assets/js/plugins.js
-	@curl https://raw2.github.com/cowboy/jquery-outside-events/master/jquery.ba-outside-events.min.js >> $(src_dir)/assets/js/plugins.js
-	@curl https://raw.github.com/Julienh/Sharrre/master/jquery.sharrre.min.js 								>> $(src_dir)/assets/js/plugins.js
-	@curl https://raw.github.com/simplefocus/FlowType.JS/master/flowtype.js >> $(src_dir)/assets/js/plugins.js
+	#@curl https://raw2.github.com/cowboy/jquery-outside-events/master/jquery.ba-outside-events.min.js >> $(src_dir)/assets/js/plugins.js
+	#@curl https://raw.github.com/Julienh/Sharrre/master/jquery.sharrre.min.js 								>> $(src_dir)/assets/js/plugins.js
+	#@curl https://raw.github.com/simplefocus/FlowType.JS/master/flowtype.js >> $(src_dir)/assets/js/plugins.js
 	@curl http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js               >> $(src_dir)/assets/js/plugins.js
 	@curl https://raw2.github.com/terrymun/Fluidbox/gh-pages/jquery.fluidbox.min.js 				>> $(src_dir)/assets/js/plugins.js
 
