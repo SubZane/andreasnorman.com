@@ -8,8 +8,6 @@
     <meta charset="utf-8">
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
 		<?php if(is_single() || is_page() || is_home()) { ?>
 			<meta name="googlebot" content="index,archive,follow,noodp" />
 			<meta name="robots" content="all,index,follow" />
@@ -21,30 +19,13 @@
 		<?php } ?>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
-      <script src="<?php bloginfo('template_url'); ?>/js/html5.js"></script>
+      <script src="<?php bloginfo('template_url'); ?>/bin7assets/js/iefixes.min.js"></script>
     <![endif]-->
-      <script src="<?php bloginfo('template_url'); ?>/js/jquery.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_url'); ?>/bin/assets/js/jquery.min.js" type="text/javascript"></script>
 
-    <!-- Le styles -->
-    <link href="<?php bloginfo('template_url'); ?>/css/csscompressor.php" rel="stylesheet">
-
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>		
-
-    <!--[if lte IE 8]>
-        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Serif:700italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400' rel='stylesheet' type='text/css'>    
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>    
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>    
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic' rel='stylesheet' type='text/css'>    
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic' rel='stylesheet' type='text/css'>    
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic' rel='stylesheet' type='text/css'>    
-    <![endif]-->
+    <link href="<?php bloginfo('template_url'); ?>/bin/assets/css/styles.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|PT+Sans+Caption:700,400|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
 
     <?php if (is_home() || is_archive()) { ?>
 		<link rel="prefetch" href="<?php echo get_next_posts_page_link(); ?>">
@@ -71,17 +52,12 @@
   </head>
 
 <body>
-<a class="hidden-phone" href="https://github.com/subzane"><img style="position: fixed; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
+
+<a class="hidden-sm hidden-xs" href="https://github.com/subzane"><img style="position: fixed; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-graphite@2x.png" alt="Fork me on GitHub"></a>
 <div class="wrapper" id="contentholder">
   <div class="container">
     <div class="row">
-      <div class="span12">
-        <header class="clearfix">
-          <div class="row">
-            <div class="span12">
-              <div class="logo"><a href="<?php echo get_option('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/a-logo.png" data-at2x="<?php bloginfo('template_url'); ?>/images/a-logo@2x.png" alt="a"></a></div>
-            </div>
-          </div>
-        </header>    
+      <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+        <div class="logo"><a href="<?php echo get_option('home'); ?>">an logo</a></div>
       </div>
     </div>
