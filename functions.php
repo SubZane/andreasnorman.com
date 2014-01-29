@@ -42,7 +42,7 @@ $comment_form = array(
 	'title_reply_to' => __( 'Leave a Reply to %s' ),
 	'cancel_reply_link' => __( 'Cancel Reply' ),
 	'label_submit' => __( 'Post Comment' ),
-	'comment_field' => '<div class="form-group"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea class="form-control" rows="12" aria-required="true"></textarea></div>',
+	'comment_field' => '<div class="form-group"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea class="form-control" id="comment" name="comment" rows="12" aria-required="true"></textarea></div>',
 	'must_log_in' => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 	'logged_in_as' => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ), admin_url( 'profile.php' ), $user->display_name, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
 	'comment_notes_before' => '',
