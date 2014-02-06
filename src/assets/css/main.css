@@ -253,6 +253,7 @@ h1.blogheader {
 	margin-right: -100px;
 	border: none;
 	padding-top: 30px;
+	margin-bottom: 40px;
 }
 
 .postcontent blockquote p {
@@ -369,6 +370,13 @@ figcaption.image-caption::before {
 	display: block;
 	content: "";
 	margin-bottom: 10px;
+}
+
+figure.aligncenter	figcaption.image-caption {
+	position: static;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 .wrapper.black {
